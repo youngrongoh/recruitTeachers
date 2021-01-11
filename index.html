@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <form id="form" method="POST">
+    <label for="name">이름</label>
+    <input id="name" type="text" name="hello" placeholder="남은혜" pattern="[가-힣]+" maxlength="4">
+    <label for="phone">연락처</label>
+    <input id="phone" type="tel" name="phone" pattern="[0-9]+" maxlength="8">
+    <label for="birth">생일</label>
+    <input id="birth" type="date" name="birth" min="2002-01-01" max="2003-02-28">
+    <button type="submit">신청</button>
+  </form>
+</body>
+
+</html>
