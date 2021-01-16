@@ -1,0 +1,44 @@
+.titlebox {
+  position: absolute;
+  top: 0.8rem;
+  left: 1.5rem;
+  text-align: left;
+  z-index: 2;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.small {
+  position: absolute;
+  display: block;
+  left: -1.8em;
+  top: -1.1em;
+  color: #fffeff;
+  font-size: 0.5em;
+  font-weight: lighter;
+  z-index: 3;
+}
+
+.season {
+  display: inline-block;
+  background-color: #2dffce;
+  color: #010001;
+  letter-spacing: -1px;
+  transform: scaleX(1.8);
+}
+
+.nonseason {
+  display: inline-block;
+  background-color: #020002;
+  color: #fffeff;
+  text-decoration: line-through;
+  letter-spacing: -1px;
+  margin-left: 0.1em;
+  transform: scaleX(0.6);
+}

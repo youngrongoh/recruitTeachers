@@ -1,0 +1,42 @@
+.logobox {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  text-align: center;
+  z-index: 3;
+  animation: fade-in 5s ease;
+}
+
+.text {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1.2em;
+  margin-top: 2em;
+  font-size: 1.2em;
+  color: #f8db69;
+  animation: blink 5s ease infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
