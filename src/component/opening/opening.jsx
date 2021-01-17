@@ -42,6 +42,7 @@ const Opening = ({ changeGameState }) => {
         ref={videoRef}
         className={styles.video}
         muted
+        preload
         allowFullScreen
         onEnded={onEnded}
         onPause={onEnded}
