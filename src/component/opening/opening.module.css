@@ -9,7 +9,7 @@
 .logobox {
   position: absolute;
   width: 100%;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
   text-align: center;
@@ -21,7 +21,7 @@
   display: inline-block;
   font-weight: bold;
   padding: 1.2em;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 2em;
   color: #f8db69;
   animation: blink 5s ease infinite;
@@ -51,5 +51,21 @@
   }
   100% {
     opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .logobox {
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logobox {
+    top: 55%;
+  }
+
+  .start {
+    margin-top: 0;
   }
 }

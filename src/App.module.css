@@ -1,0 +1,5 @@
+@media screen and (min-width: 1024px), screen and (min-height: 920px) {
+  .app {
+    font-size: 1.6em;
+  }
+}

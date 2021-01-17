@@ -22,7 +22,16 @@ const InputContent = ({
   };
 
   const onChange = (e) => {
-    e.preventDefault(e);
+    e.preventDefault();
+    const target = e.target;
+    const value = target.value;
+    if (target.type === 'date') {
+      e.target.value = value;
+      return;
+    }
+    const pattern =
+      target.type === 'text' ? /[^ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g : /[^0-9]/g;
+    e.target.value = value.replace(pattern, '');
   };
 
   const onInputBtnClick = () => {
@@ -69,7 +78,6 @@ const InputContent = ({
   const onSelectBtnClick = (e) => {
     let target = e.target;
     if (target.matches('button') && target.firstElementChild) {
-      console.log('h');
       const value = target.firstElementChild.value;
       return value.length < 8
         ? alert('응? 번호가 이상한데?')
@@ -89,6 +97,8 @@ const InputContent = ({
   useEffect(() => {
     if (inputRef.current) {
       inputRef.current.focus();
+      inputRef.current.value =
+        inputRef.current.type === 'date' ? '2002-01-01' : '';
     }
   }, []);
 
@@ -107,11 +117,10 @@ const InputContent = ({
           {type[1] === 'birth' && (
             <input
               ref={inputRef}
-              className={styles.input}
+              className={`${styles.input} ${styles.birth}`}
               id="birth"
               type="date"
               name="birth"
-              value="2002-01-01"
               min="2002-01-01"
               max="2003-02-28"
               onChange={onChange}
@@ -125,7 +134,7 @@ const InputContent = ({
               id="name"
               type="text"
               name="name"
-              placeholder="이름 입력"
+              placeholder="이름입력"
               pattern="[가-힣]+"
               maxLength="4"
               onChange={onChange}
@@ -141,7 +150,7 @@ const InputContent = ({
               name="phone"
               pattern="[0-9]+"
               maxLength="8"
-              placeholder="연락처 8자리 입력"
+              placeholder="연락처 8자리입력"
               onChange={onChange}
               onKeyPress={onKeyPress}
             />

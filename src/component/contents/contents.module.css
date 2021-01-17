@@ -29,7 +29,7 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  width: 80vw;
+  width: 70vw;
   transform: translate(-50%, -50%);
   border: 1em solid black;
   overflow: hidden;
@@ -60,5 +60,27 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .memewrap {
+    top: 35%;
+    max-width: 14em;
+  }
+
+  .rain {
+    height: 90vh;
+  }
+
+  .kcm {
+    height: 92vh;
+  }
+}
+
+@media screen and (min-height: 920px) {
+  .memewrap {
+    top: 35%;
+    max-width: 18em;
   }
 }
