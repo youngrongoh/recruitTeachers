@@ -9,16 +9,33 @@ const Contents = ({ type, script, showNextPage, collectData }) => {
     setName(value);
   };
 
+  const bg = script.bg === 'white' ? styles.white : styles.church;
+
   return (
-    <section className={styles.content}>
+    <section className={`${styles.content} ${bg}`}>
       <div className={styles.scene}>
         <img
           className={`${styles.avartar} ${
-            script.avartar.match('rain') ? styles.rain : styles.kcm
+            script.avartar === ''
+              ? styles.hide
+              : script.avartar.match('rain')
+              ? styles.rain
+              : styles.kcm
           }`}
           src={`./assets/${script.avartar}.png`}
-          alt="rain"
+          alt="avartar"
         />
+        <div
+          className={`${styles.memewrap} ${
+            script.meme === '' ? styles.hide : ''
+          }`}
+        >
+          <img
+            className={styles.meme}
+            src={`./assets/${script.meme}`}
+            alt="meme"
+          />
+        </div>
       </div>
       {type[0] === 'text' && (
         <TextContent

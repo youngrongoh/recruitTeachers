@@ -30,7 +30,13 @@ const InputContent = ({
     const value = target.value;
 
     if (value === '') {
-      alert(`에이~ ${target.name === 'name' ? '이름' : '번호'} 좀 알려줘~`);
+      alert(
+        `${
+          target.name === 'name'
+            ? '당신의 이름을 입력하세요.'
+            : '에이~ 번호 좀 알려줘~'
+        }`
+      );
       return;
     }
 
@@ -44,7 +50,7 @@ const InputContent = ({
       message = `네 생일이 ${formatted.join(' ')} 맞아?`;
     } else if (target.name === 'name') {
       handleNameSubmit(value.slice(-2));
-      message = `네 이름이 ${value} 맞아?`;
+      message = `당신의 실명이 ${value} 맞습니까?`;
     } else if (target.name === 'phone') {
       if (value.length < 8) {
         alert('응? 번호가 이상한데?');

@@ -1,116 +1,195 @@
 {
   "scripts": [
     {
-      "display": "bottom",
-      "type": ["text"],
-      "speaker": "???",
-      "avartar": "rain-shadow",
-      "texts": [["꾸러기들, 안녕?"]]
+      "display": "full",
+      "type": ["input", "name"],
+      "bg": "white",
+      "speaker": "나",
+      "avartar": "",
+      "meme": "",
+      "texts": [["여긴 어디? 난 누구?"]]
     },
     {
       "display": "bottom",
       "type": ["text"],
+      "bg": "church",
+      "speaker": "???",
+      "avartar": "rain-shadow",
+      "meme": "",
+      "texts": [["꾸러기들, 안녕?👋"]]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
+      "speaker": "나",
+      "avartar": "rain-shadow",
+      "meme": "",
+      "texts": [["( ??? )"]]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
+      "meme": "rain-meme-1.png",
       "texts": [["난...", "훈이라고 해~😉"]]
     },
     {
       "display": "bottom",
       "type": ["text"],
+      "bg": "church",
+      "speaker": "나",
+      "avartar": "rain-1",
+      "meme": "",
+      "texts": [["( '닫기' 버튼이 어디있더라..😑 )"]]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
       "speaker": "???",
       "avartar": "kcm-shadow",
+      "meme": "",
       "texts": [["어어어어...???? 잠깐!"]]
     },
     {
       "display": "bottom",
       "type": ["text"],
-      "speaker": "KCM",
+      "bg": "church",
+      "speaker": "강창모",
       "avartar": "kcm-1",
-      "texts": [["여기는 02 또래만 들어올 수 있는데~", "잠깐 확인 좀 할게~"]]
+      "meme": "",
+      "texts": [
+        [
+          "여기는 02 또래만 들어올 수 있는데~",
+          "민증은 보여줄 수 없으니..",
+          "잠깐 생일로 확인할게~"
+        ]
+      ]
     },
     {
       "display": "full",
       "type": ["input", "birth"],
-      "speaker": "KCM",
+      "bg": "church",
+      "speaker": "강창모",
       "avartar": "kcm-1",
+      "meme": "",
       "texts": [["안녕, 꾸러기 친구~", "네 생일이 언제야?"]]
     },
     {
       "display": "bottom",
       "type": ["text"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
-      "texts": [
-        ["에이.. 이 형 또 왔네..", "오! 02 또래 맞구나! 어서와!"],
-        [
-          "그래, 요즘 '1일1깡'은 잘하고 있나?",
-          "깡 조회수가 예전 만큼 안 오르드라~"
-        ],
-        ["새해 됐다고 초심 잃은거 아니지?", "구독, 좋아요 좀 눌러줘~"],
-        ["아! 네 이름을 모르는데..", "우리, 꾸러기 이름이 뭐라구?"]
-      ]
-    },
-    {
-      "display": "full",
-      "type": ["input", "name"],
-      "speaker": "깡주",
-      "avartar": "rain-1",
-      "texts": [["우리 꾸러기 이름이 뭐라구?"]]
+      "meme": "",
+      "texts": [["에이.. 이 형 또 왔네..", "오! 02 또래 맞구나! 어서와!"]]
     },
     {
       "display": "bottom",
       "type": ["text"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
-      "texts": [["[name]! 안녕!", "그래, 내 번호는 있지?"]]
+      "meme": "rain-meme-2.gif",
+      "texts": [
+        [
+          "그래, 요즘 '1일1깡'은 잘하고 있나?",
+          "깡 조회수가 예전 만큼 안 오르드라~"
+        ]
+      ]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
+      "speaker": "나",
+      "avartar": "rain-1",
+      "meme": "",
+      "texts": [["( 설마.. 이거 [ 앞깡고😎 ]였어?? )"]]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
+      "speaker": "깡주",
+      "avartar": "rain-1",
+      "meme": "",
+      "texts": [
+        ["새해 됐다고 초심 잃은거 아니지?", "구독👆, 좋아요👍 좀 눌러줘~"],
+        [
+          "[name]! 그거 알아?",
+          "이번에 고등부에서 [ 청년교사 ]를 모집한다던데.."
+        ],
+        ["아, 맞다!", "너, 내 번호 알지?"]
+      ]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
+      "speaker": "나",
+      "avartar": "rain-1",
+      "meme": "",
+      "texts": [["( 응? 갑자기?? )"]]
     },
     {
       "display": "full",
       "type": ["input", "select"],
+      "bg": "church",
       "speaker": "[name]",
       "avartar": "rain-1",
+      "meme": "",
       "texts": [
         ["내 번호 알지?"],
-        ["당연하지~ [number] 잖아~", "아니, 몰라..."]
+        ["당연하지~ [number] 잖아~", "아니?! 그걸 내가 알리가.."]
       ]
     },
     {
       "display": "bottom",
       "type": ["text"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
+      "meme": "",
       "texts": [
-        [
-          "뭐?! 이거 섭하네..",
-          "먼저 네 번호부터 찍어줘봐",
-          "나도 네 번호 없그든..ㅎㅎ"
-        ]
+        ["뭐?! 이거 섭섭하네.."],
+        ["크흠..", "그럼, 먼저 네 번호 찍어줘 봐~", "나도 네 번호 없그든..ㅎㅎ"]
       ]
     },
     {
       "display": "full",
       "type": ["input", "phone"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
-      "texts": [["먼저, 네 번호부터 알려줘봐~"]]
+      "meme": "",
+      "texts": [["번호 좀 알려줘~"]]
     },
     {
       "display": "bottom",
       "type": ["text"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
+      "meme": "",
       "texts": [
+        ["땡큐땡큐"],
         [
           "[name]! 이번에 청년부 올라간거 축하해🎉",
-          "청년이 됐으면 고등부 청년교사를 해야겠지?"
+          "청년이 됐으면 고등부에서 청년교사를 해야겠지?"
         ]
       ]
     },
     {
       "display": "full",
       "type": ["input", "select"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
+      "meme": "",
       "texts": [
         ["고등부 청년교사 할거지?"],
         [
@@ -123,9 +202,38 @@
     {
       "display": "bottom",
       "type": ["text"],
+      "bg": "church",
+      "speaker": "나",
+      "avartar": "rain-1",
+      "meme": "",
+      "texts": [["( 선택지가 다 똑같잖아!!😱😱😱 )"]]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
       "speaker": "깡주",
       "avartar": "rain-1",
+      "meme": "",
       "texts": [["그래 잘 생각했어!", "곧, 고등부에서 보자!👋"]]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
+      "speaker": "나레이션",
+      "avartar": "",
+      "meme": "",
+      "texts": [["이렇게, [name]의 청년교사 생활이 시작되었던 것이다!"]]
+    },
+    {
+      "display": "bottom",
+      "type": ["text"],
+      "bg": "church",
+      "speaker": "",
+      "avartar": "",
+      "meme": "",
+      "texts": [["- 끝 -"]]
     }
   ]
 }
