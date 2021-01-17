@@ -29,7 +29,7 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  width: 25em;
+  width: 80vw;
   transform: translate(-50%, -50%);
   border: 1em solid black;
   overflow: hidden;
