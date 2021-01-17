@@ -67,8 +67,9 @@ const InputContent = ({
   };
 
   const onSelectBtnClick = (e) => {
-    const target = e.target;
+    let target = e.target;
     if (target.matches('button') && target.firstElementChild) {
+      console.log('h');
       const value = target.firstElementChild.value;
       return value.length < 8
         ? alert('응? 번호가 이상한데?')
@@ -77,6 +78,12 @@ const InputContent = ({
       return;
     }
     showNextPage();
+  };
+
+  const onKeyPress = (e) => {
+    if (e.key === 'Enter' && inputRef.current) {
+      onInputBtnClick();
+    }
   };
 
   useEffect(() => {
@@ -108,6 +115,7 @@ const InputContent = ({
               min="2002-01-01"
               max="2003-02-28"
               onChange={onChange}
+              onKeyPress={onKeyPress}
             />
           )}
           {type[1] === 'name' && (
@@ -121,6 +129,7 @@ const InputContent = ({
               pattern="[가-힣]+"
               maxLength="4"
               onChange={onChange}
+              onKeyPress={onKeyPress}
             />
           )}
           {type[1] === 'phone' && (
@@ -132,8 +141,9 @@ const InputContent = ({
               name="phone"
               pattern="[0-9]+"
               maxLength="8"
+              placeholder="연락처 8자리 입력"
               onChange={onChange}
-              placeholder="번호 8자리 입력"
+              onKeyPress={onKeyPress}
             />
           )}
           <button
@@ -166,6 +176,7 @@ const InputContent = ({
                       placeholder="번호 입력"
                       pattern="[0-9]+"
                       maxLength="8"
+                      onKeyPress={onKeyPress}
                     ></input>
                     <>{strArr[1]}</>
                   </>

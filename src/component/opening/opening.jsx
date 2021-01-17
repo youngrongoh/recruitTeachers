@@ -42,14 +42,14 @@ const Opening = ({ changeGameState }) => {
         ref={videoRef}
         className={styles.video}
         muted
-        preload
+        preload="true"
         allowFullScreen
         onEnded={onEnded}
         onPause={onEnded}
       >
-        <source src="./assets/switch-To-me.mov" type="video/mp4" />
         <source src="./assets/switch-To-me.webm" type="video/webm" />
-        <source src="./assets/switch-To-me.mp4" type="video/webm" />
+        <source src="./assets/switch-To-me.mov" type="video/mov" />
+        <source src="./assets/switch-To-me.mp4" type="video/mp4" />
       </video>
     </section>
   );
